@@ -1,0 +1,68 @@
+import React from "react";
+import expGreen from "../../assets/expGreen.svg";
+import "./Experience.css";
+import ExperienceCard from "./ExperienceCard";
+
+
+function Experience() {
+
+    const experienceData = [
+      {
+        id: 1,
+        company: "Globex Corporation",
+        jobtitle: "Frontend Developer",
+        startYear: "2018",
+        endYear: "2019",
+      },
+      {
+        id: 2,
+        company: "Vehement Capital Partners",
+        jobtitle: "Backend Developer",
+        startYear: "2019",
+        endYear: "2020",
+      },
+      {
+        id: 3,
+        company: "Wonka Industries",
+        jobtitle: "Marketing",
+        startYear: "2020",
+        endYear: "Present",
+      },
+    ];
+
+  return (
+    <div className="experience" id="experience">
+      <div className="experience-body">
+        <div className="experience-image">
+          <img src={expGreen} alt="expGreen" />
+        </div>
+        <div className="experience-description">
+          <h1
+            style={{
+              margin: "4rem 0",
+              fontFamily: "Fira Code",
+              fontSize: "2.5rem",
+              fontWeight: "bold",
+              alignSelf : "flex-start"
+              
+            }}
+          >
+            <span style={{ color: "#32CD30" }}>Work</span> Experience
+          </h1>
+          {experienceData.map((exp) => (
+            <ExperienceCard
+              key={exp.id}
+              id={exp.id}
+              jobtitle={exp.jobtitle}
+              company={exp.company}
+              startYear={exp.startYear}
+              endYear={exp.endYear}
+            />
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export default Experience;

@@ -1,0 +1,112 @@
+.projectPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+.projectPage-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+
+.projectPage-search {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 0;
+}
+
+.search {
+    color: white;
+    width: 40%;
+    height: 2.75rem;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    padding: 1.9rem 2.5rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+    background-color: #10265ddc;
+    box-shadow: inset 3px 3px 6px #ffffff10, inset -3px -3px 6px #00000060;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.search::placeholder {
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.search:focus {
+    border: 4px solid #32CD30;
+    outline: none;
+}
+
+.project-container {
+    margin-top: 5rem;
+    width: 100%;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 5rem;
+    padding-left: 1rem;
+}
+
+.project-card {
+    width: 100%;
+    max-width: 350px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.project-card-content {
+    padding: 2rem;
+}
+
+.project-card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.project-card-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.project-card-link {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #10265ddc;
+    color: #fff;
+    border-radius: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.project-card-link:hover {
+    background-color: #32CD30;
+}
