@@ -25,6 +25,9 @@ body {
   position: relative;
   min-height: 100vh;
 }
+.home {
+  margin-top: -4rem;
+}
 
 .home-parent {
   display: flex;
@@ -39,7 +42,6 @@ body {
   font-size: 7rem;
   width: 50%;
   height: 100vh;
-  font-weight: ;
 }
 
 .homepage-avatar {
@@ -101,7 +103,9 @@ body {
   transition: all 0.2s ease-in-out;
 }
 
-
+.Typewriter__wrapper {
+  line-height: 3rem !important;
+}
 
 .Appcontent {
   /* min-height: 100vh !important; */
@@ -181,9 +185,14 @@ body {
   font-size: xx-large !important;
 }
 
+.header-buttons {
+  border-bottom: 5px solid #152b61 !important;
+}
+
 .header-buttons:hover{
   transform: scale(1.1,1.1);
-  background-color: green !important;
+  border-bottom: 5px solid #32CD30 !important;
+  /* background: #32CD30 !important;  */
 }
 
 .footer-left-text {
@@ -200,10 +209,19 @@ body {
 
 }
 
+.logo-img {
+  width: 180px;
+  height: auto;
+  cursor: pointer;
+}
+
 @media screen and (max-width: 768px) {
   .introduction {
     flex-direction: column;
     justify-content: center;
+  }
+  .home {
+    margin-top: -2.5rem;
   }
   .intro-text {
     margin: auto;

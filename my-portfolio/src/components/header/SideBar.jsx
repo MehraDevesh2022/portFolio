@@ -4,7 +4,7 @@ import Fade from "react-reveal/Fade";
 import {  IoHomeSharp } from "react-icons/io5";
 import { HiDocumentText } from "react-icons/hi";
 import { BsFillGearFill } from "react-icons/bs";
-import { MdPhone } from "react-icons/md";
+
 import { FaUser, FaFolderOpen } from "react-icons/fa";
 import { makeStyles } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
@@ -13,17 +13,17 @@ import CloseIcon from "@material-ui/icons/Close";
 
     const useStyles = makeStyles((t) => ({
       sideBar: {
-        position: "absolute",
-        backgroundColor: "#10265ddc !important",
+        backgroundColor: "#10265ddc",
         boxShadow: "0px 8px 10px rgba(0, 0, 0, 0.5)",
         height: "fit-content",
         color: "white",
-        padding: "2rem" ,
+        padding: "2rem 3rem",
         zIndex: 99,
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
         width: "110%",
+        overflow: "hidden",
       },
       navMenu: {
         fontSize: "2.5rem",
@@ -35,16 +35,24 @@ import CloseIcon from "@material-ui/icons/Close";
           color: "#32CD30",
         },
         [t.breakpoints.down("sm")]: {
-          fontSize: "2.5rem",
+          fontSize: "2rem",
         },
         [t.breakpoints.down("xs")]: {
           fontSize: "2rem",
         },
       },
+      drawer: {
+        backgroundColor: "#10265ddc !important",
+        width: "100%",
+        height: "fit-content",
+        color: "white",
+        padding: "4rem",
+        zIndex: 99,
+      },
       MuiDrawer: {
-        padding: ".7em 1.8em",
-        width: "14em",
-
+        padding: "2em 1.8em",
+        width: "13em",
+        height: "fit-content",
         fontStyle: " normal",
         fontWeight: " normal",
         fontSize: " 24px",
@@ -53,7 +61,9 @@ import CloseIcon from "@material-ui/icons/Close";
         borderTopRightRadius: "40px",
         borderBottomRightRadius: "40px",
         [t.breakpoints.down("sm")]: {
-          width: "12em",
+          width: "11em",
+          height: "fit-content",
+          padding: "1em 1.5em",
         },
       },
       closebtn: {
@@ -96,7 +106,8 @@ import CloseIcon from "@material-ui/icons/Close";
         justifyContent: "space-evenly",
         padding: "0 30px",
         boxSizing: "border-box",
-        border: "3px solid",
+        border: "2.5px solid",
+        boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.5)",
         borderColor: "white",
         transition: "background-color 0.2s, color 0.2s",
         "&:hover": {
@@ -108,11 +119,10 @@ import CloseIcon from "@material-ui/icons/Close";
         [t.breakpoints.down("sm")]: {
           width: "100%",
           padding: "0 25px",
-          height: "55px",
+          height: "aut0",
         },
       },
       drawerLinks: {
-        fontFamily: "var(--primaryFont)",
         width: "50%",
         fontSize: "1.3rem",
         fontWeight: 600,
@@ -132,11 +142,11 @@ const Sidebar = ({ isOpen, onClose }) => {
   const classes = useStyles();
 
   return (
-    <div className={classes.sideBar} >
+    <div className={classes.sideBar}  >
       <Drawer
         variant="temporary"
         classes={{ paper: classes.MuiDrawer }}
-        className="drawer"
+        className={classes.drawer}
         disableScrollLock={true}
         open={isOpen}
         onClose={onClose}
@@ -207,14 +217,7 @@ const Sidebar = ({ isOpen, onClose }) => {
               </NavLink>
             </Fade>
 
-            <Fade left>
-              <NavLink to="/#contacts" smooth={true} spy="true" duration={2000}>
-                <div className={classes.drawerItem}>
-                  <MdPhone className={classes.drawerIcon} />
-                  <span className={classes.drawerLinks}>Contact</span>
-                </div>
-              </NavLink>
-            </Fade>
+           
           </div>
         </div>
       </Drawer>

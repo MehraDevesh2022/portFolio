@@ -4,18 +4,19 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-import Menu from "@mui/material/Menu";
+
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
-import MenuItem from "@mui/material/MenuItem";
-import BoltIcon from "@mui/icons-material/Bolt";
+import Sidebar from "./SideBar";
+import CodeIcon from "@mui/icons-material/Code";
 import { Link } from "react-router-dom";
 import FaceRoundedIcon from "@mui/icons-material/FaceRounded";
 import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
 import FolderSharedRoundedIcon from "@mui/icons-material/FolderSharedRounded";
 import CallRoundedIcon from "@mui/icons-material/CallRounded";
 import { BsGithub } from "react-icons/bs";
+  import logo from "../../assets/My project.png";
 
 const pages = [
   { text: "Home", href: "/" },
@@ -33,14 +34,17 @@ const pageIcons = [
 ];
 
 const Header = () => {
-  const [anchorElNav, setAnchorElNav] = useState(null);
+  // const [anchorElNav, setAnchorElNav] = useState(null);
+ const [sideMenuOpen, setSideMenuOpen] = useState(false);
 
-  const handleOpenNavMenu = (event) => {
-    setAnchorElNav(event.currentTarget);
-  };
-  const handleCloseNavMenu = () => {
-    setAnchorElNav(null);
-  };
+ const handleToggleSideMenu = () => {
+   setSideMenuOpen(!sideMenuOpen);
+ };
+
+ const handleCloseSideMenu = () => {
+   setSideMenuOpen(false);
+ };
+
 
   return (
     <AppBar
@@ -49,68 +53,39 @@ const Header = () => {
         backgroundColor: "#152b61",
         boxShadow:
           "0px 4px 6px rgba(0, 0, 0, 0.1), 0px 8px 16px rgba(0, 0, 0, 0.1)",
+        padding: "0.5rem 0",
       }}
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <BoltIcon sx={{ display: { xs: "none", md: "flex" }, mr: 1 }} />
-          <Typography
-            variant="h6"
-            noWrap
-            component="a"
-            href="/"
-            sx={{
-              mr: 2,
-              display: { xs: "none", md: "flex" },
-              fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
-              color: "inherit",
-              textDecoration: "none",
-            }}
-          >
-            Abhinav Kumar
-          </Typography>
-
+        
+          <img
+            src={logo} // Use your imported logo here
+            alt="Logo"
+           className="logo-img"
+          />
           <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
               aria-controls="menu-appbar"
               aria-haspopup="true"
-              onClick={handleOpenNavMenu}
+              onClick={handleToggleSideMenu}
               color="inherit"
             >
               <MenuIcon />
             </IconButton>
-            <Menu
-              id="menu-appbar"
-              anchorEl={anchorElNav}
-              anchorOrigin={{
-                vertical: "bottom",
-                horizontal: "left",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "left",
-              }}
-              open={Boolean(anchorElNav)}
-              onClose={handleCloseNavMenu}
-              sx={{
-                display: { xs: "block", md: "none" },
-              }}
-            >
-              {pages.map((page ,idx) => (
-                <MenuItem key={idx} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="left">
-                    <Link to={page.href}>{page.text}</Link>
-                  </Typography>
-                </MenuItem>
-              ))}
-            </Menu>
+            {sideMenuOpen && (
+              <Sidebar isOpen={sideMenuOpen} onClose={handleCloseSideMenu} />
+            )}
           </Box>
-          <BoltIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
+          <CodeIcon
+            sx={{
+              display: { xs: "flex", md: "none" },
+              mr: 1,
+              fontSize: "1.5rem",
+            }}
+          />
           <Typography
             variant="h5"
             noWrap
@@ -121,13 +96,17 @@ const Header = () => {
               display: { xs: "flex", md: "none" },
               flexGrow: 1,
               fontFamily: "monospace",
-              fontWeight: 700,
-              letterSpacing: ".3rem",
+              fontWeight: 800,
+              letterSpacing: ".1rem",
               color: "inherit",
               textDecoration: "none",
+              fontSize: "1.5rem",
+              "&:hover": {
+                color: "#32CD30",
+              },
             }}
           >
-            Abhinav Kumar
+            Devseh Mehra
           </Typography>
           <Box
             justifyContent="flex-end"
@@ -143,25 +122,30 @@ const Header = () => {
                     position: "relative",
                   }}
                 >
-                  <Button
-                    className="header-buttons"
-                    key={page}
-                    onClick={handleCloseNavMenu}
-                    sx={{
-                      my: 2,
-                      color: "white",
-                      display: "flex",
-                      fontFamily: "poppins",
-                      fontSize: 16,
-                      alignItems: "center",
-                      marginRight: "1.5rem",
-                    }}
+                  <Link
+                    to={page.href}
+                    style={{ textDecoration: "none", color: "inherit" }}
                   >
-                    <Icon style={{ marginRight: "0.8rem" }} />
-                    <Link to={page.href}>
-                      <Typography color="white">{page.text}</Typography>
-                    </Link>
-                  </Button>
+                    <Button
+                      className="header-buttons"
+                      key={page}
+                      sx={{
+                        my: 2,
+                        color: "white",
+                        display: "flex",
+                        fontFamily: "poppins",
+                        fontSize: 12,
+                        alignItems: "center",
+                        marginRight: "1.5rem",
+                      }}
+                    >
+                      <Icon style={{ marginRight: "0.9rem" }} />
+
+                      <Typography color="white" style={{ fontSize: "16px" }}>
+                        {page.text}
+                      </Typography>
+                    </Button>
+                  </Link>
                 </div>
               );
             })}

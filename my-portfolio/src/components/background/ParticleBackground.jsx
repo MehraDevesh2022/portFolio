@@ -66,7 +66,7 @@ const ParticleBackground = () => {
             },
           },
           size: {
-            value: 3,
+            value: 5,
             random: true,
             anim: {
               enable: false,
@@ -79,7 +79,7 @@ const ParticleBackground = () => {
             enable: true,
             distance: 150,
             color: "#ffffff",
-            opacity: 0.6, // Increased opacity for thicker lines
+            opacity: 0.7, // Increased opacity for thicker lines
             width: 2, // Increased width for thicker lines
           },
           move: {

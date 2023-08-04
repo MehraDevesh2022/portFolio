@@ -8,6 +8,11 @@
 # testing
 /coverage
 
+
+# SECURE.JS
+/SECURE.JS
+
+
 # production
 /build
 

@@ -10,7 +10,7 @@ const HomeBottomPage = () => {
 
   return (
     <div className="homeBottom" >
-      <h1 style={{ fontSize: "2.6rem", marginBottom: "1rem" }}>
+      <h1 style={{ fontSize: "2.6rem", marginBottom: "1rem"  , marginTop : "-9rem"}}>
         Some Things <span style={{ color: "#32CD30" }}>About Me</span>
       </h1>
       <div className="introduction">

@@ -25,10 +25,10 @@ import { Button, makeStyles } from "@material-ui/core";
      textTransform: "inherit",
      textDecoration: "none",
      width: "150px",
-     fontSize: "1rem",
-   
+     fontSize: "1.2rem",
+
      height: "50px",
-  fontWeight: "bold",
+     fontWeight: "bold",
      border: `3px solid #F2F2F2`,
      transition: "100ms ease-out",
      "&:hover": {
@@ -42,19 +42,16 @@ import { Button, makeStyles } from "@material-ui/core";
      },
    },
    contactBtn: {
-     backgroundColor: "#32CD30",
+     backgroundColor: "#10265ddc",
      boxShadow: "0px 8px 10px rgba(0, 0, 0, 0.5)",
-     color: "#FFFFFF",
+     color: "#32CD30",
      fontWeight: "bold",
      borderRadius: "30px",
      textTransform: "inherit",
      textDecoration: "none",
      width: "150px",
      height: "50px",
-     fontSize: "1rem",
-
-     fontFamily: "var(--primaryFont)",
-     border: `3px solid #32CD30`,
+     fontSize: "1.2rem",
      transition: "100ms ease-out",
      "&:hover": {
        backgroundColor: "#152b61",
@@ -124,6 +121,7 @@ const HomePage = () => {
             </NavLink>
           </div>
         </div>
+
         <img
           className="rounded w-36 h-36 homepage-avatar"
           src={developer}
@@ -132,7 +130,7 @@ const HomePage = () => {
       </div>
 
       <HomeBottomPage />
-    </div>
+    </div> 
   );
 };
 
