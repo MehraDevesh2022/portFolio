@@ -36,7 +36,7 @@ const TechStack = () => {
         </span>
       </h1>
       <div className="techstack-row">
-        <Card.Group itemsPerRow={width > 750 ? 5 : 2}>
+        <Card.Group itemsPerRow={width > 750 ? 6 : 2}>
           <Card
             raised
             className="item"

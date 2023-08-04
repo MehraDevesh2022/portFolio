@@ -9,14 +9,17 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import Sidebar from "./SideBar";
-import CodeIcon from "@mui/icons-material/Code";
-import { Link } from "react-router-dom";
+// import CodeIcon from "@mui/icons-material/Code";
+import { Link  ,useNavigate} from "react-router-dom";
 import FaceRoundedIcon from "@mui/icons-material/FaceRounded";
 import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
 import FolderSharedRoundedIcon from "@mui/icons-material/FolderSharedRounded";
 import CallRoundedIcon from "@mui/icons-material/CallRounded";
 import { BsGithub } from "react-icons/bs";
-  import logo from "../../assets/My project.png";
+  // import logo from "../../assets/My project.png";
+
+  import logo from "../../assets/my-logo.png";
+ 
 
 const pages = [
   { text: "Home", href: "/" },
@@ -36,7 +39,7 @@ const pageIcons = [
 const Header = () => {
   // const [anchorElNav, setAnchorElNav] = useState(null);
  const [sideMenuOpen, setSideMenuOpen] = useState(false);
-
+ const navigate = useNavigate();
  const handleToggleSideMenu = () => {
    setSideMenuOpen(!sideMenuOpen);
  };
@@ -58,13 +61,19 @@ const Header = () => {
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-        
           <img
             src={logo} // Use your imported logo here
             alt="Logo"
-           className="logo-img"
+            className="logo-img"
+            onClick={() => navigate("/")}
           />
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "flex", md: "none" },
+              textAlign: "center",
+            }}
+          >
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -79,13 +88,7 @@ const Header = () => {
               <Sidebar isOpen={sideMenuOpen} onClose={handleCloseSideMenu} />
             )}
           </Box>
-          <CodeIcon
-            sx={{
-              display: { xs: "flex", md: "none" },
-              mr: 1,
-              fontSize: "1.5rem",
-            }}
-          />
+
           <Typography
             variant="h5"
             noWrap
@@ -106,7 +109,12 @@ const Header = () => {
               },
             }}
           >
-            Devseh Mehra
+            <img
+              src={logo} // Use your imported logo here
+              alt="Logo"
+              className="logo-img2"
+              onClick={() => navigate("/")}
+            />
           </Typography>
           <Box
             justifyContent="flex-end"

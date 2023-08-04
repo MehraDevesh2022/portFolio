@@ -210,10 +210,80 @@ body {
 }
 
 .logo-img {
-  width: 180px;
+  width: 187px;
   height: auto;
   cursor: pointer;
 }
+.logo-img2 {
+  width: 187px;
+  height: auto;
+  cursor: pointer;
+  margin: 0 auto; 
+  
+  
+  /* margin-right: 3rem; */
+  transition: transform 0.3s, box-shadow 0.3s;
+  &:hover {
+    transform: scale(1.1); 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+}
+
+
+/* Media queries for adjusting margin-right of logo-img2 */
+@media (min-width: 800px) and (max-width: 899px) {
+  .logo-img2 {
+    margin-right: 21rem;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 799px) {
+  .logo-img2 {
+    margin-right: 14rem;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 699px) {
+  .logo-img2 {
+    margin-right: 11rem;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 599px) {
+  .logo-img2 {
+    margin-right: 11rem;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 499px) {
+  .logo-img2 {
+    margin-right: 7.5rem;
+  }
+}
+@media (min-width: 300px) and (max-width: 399px) {
+  .logo-img2 {
+    margin-right: 6rem;
+  }
+}
+
+@media (max-width: 999px) {
+  .logo-img {
+    display: none;
+  }
+  .search {
+    width: 75%;
+  }
+}
+
+/* Hide the second logo image for screen width 999px and above */
+@media (min-width: 1000px) {
+  .logo-img2 {
+    display: none;
+    
+  }
+}
+  
+
 
 @media screen and (max-width: 768px) {
   .introduction {

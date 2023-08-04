@@ -88,7 +88,7 @@ const AboutInfo = () => {
         <GitHubCalendar
           style={{ marginBottom: "50px" }}
           username="MehraDevesh2022"
-          blockMargin={8}
+          blockMargin={4}
           blockSize={16}
           fontSize={18}
           color={"#32CD30"}
