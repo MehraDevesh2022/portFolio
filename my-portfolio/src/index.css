@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Fira+Code&family=Poppins:wght@400;800&display=swap");
 @import "tailwindcss/base";
 @import "tailwindcss/components";
@@ -6,7 +6,6 @@
 
 * {
   font-family: "Fira-Code", monospace;
- 
 }
 
 body {
@@ -18,6 +17,46 @@ body {
   background-color: #21262d !important;
   color: white !important;
 }
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 .particle {
   z-index: -1 !important;
 }
@@ -25,6 +64,7 @@ body {
   position: relative;
   min-height: 100vh;
 }
+
 .home {
   margin-top: -4rem;
 }
@@ -81,22 +121,24 @@ body {
   margin-bottom: 4rem !important;
 }
 
-
 .techstack {
   margin: 3rem 0;
 }
+
+.techstack-row {
+  width: 75%;
+  margin: 0 auto;
+}
 .item {
-    display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   transform: scale(0.7, 0.7);
-
+  width: 5rem;
   background-color: #10265ddc;
- 
-    padding: 2rem 1rem!important;
-  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.5) !important;
-  gap: -5px !important;
 
+  padding: 2rem 1rem !important;
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.5) !important;
 }
 .item:hover {
   transform: scale(0.8, 0.8);
@@ -156,20 +198,22 @@ body {
 .single-card {
   transform: scale(0.8, 0.8);
   box-shadow: 5px 5px 30px rgba(7, 73, 228, 0.4) !important;
-  background: linear-gradient(to right, rgb(182, 244, 146), rgb(51, 139, 147)) !important;
+  background: linear-gradient(
+    to right,
+    rgb(182, 244, 146),
+    rgb(51, 139, 147)
+  ) !important;
   border-radius: 2rem !important;
   border: 5px solid black !important;
 }
-.single-card-button{
+.single-card-button {
   background-color: green !important;
 }
-
 
 .single-card:hover {
   transform: scale(0.9, 0.9);
   box-shadow: 5px 5px 30px rgba(7, 73, 228, 0.6) !important;
 }
-
 
 .contact-box {
   display: flex;
@@ -178,8 +222,8 @@ body {
   margin-top: 5rem;
 }
 .contact-icon {
-  width:50%;
-  height:auto;
+  width: 50%;
+  height: auto;
 }
 .contact-text {
   font-size: xx-large !important;
@@ -189,80 +233,43 @@ body {
   border-bottom: 5px solid #152b61 !important;
 }
 
-.header-buttons:hover{
-  transform: scale(1.1,1.1);
-  border-bottom: 5px solid #32CD30 !important;
+.header-buttons:hover {
+  transform: scale(1.1, 1.1);
+  border-bottom: 5px solid #32cd30 !important;
   /* background: #32CD30 !important;  */
 }
 
 .footer-left-text {
-  font-family: 'Lobster', cursive;
+  font-family: "Lobster", cursive;
   font-size: x-large;
-  color:bisque;
+  color: bisque;
 }
 
-.contact-list-item:hover{
-
-  transform: scale(1.1,1.1);
+.contact-list-item:hover {
+  transform: scale(1.1, 1.1);
   border: 5 0 5 0 solid skyblue;
   border-radius: 5rem;
-
 }
 
 .logo-img {
-  width: 187px;
-  height: auto;
+  height: 55px;
   cursor: pointer;
-}
-.logo-img2 {
-  width: 187px;
-  height: auto;
-  cursor: pointer;
-  margin: 0 auto; 
-  
-  
-  /* margin-right: 3rem; */
-  transition: transform 0.3s, box-shadow 0.3s;
+  margin-top: 5px;
   &:hover {
-    transform: scale(1.1); 
+    transform: scale(1.1);
+
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   }
 }
+.logo-img2 {
+  height: 55px;
+  margin-top: 5px;
 
-
-/* Media queries for adjusting margin-right of logo-img2 */
-@media (min-width: 800px) and (max-width: 899px) {
-  .logo-img2 {
-    margin-right: 21rem;
-  }
-}
-
-@media (min-width: 700px) and (max-width: 799px) {
-  .logo-img2 {
-    margin-right: 14rem;
-  }
-}
-
-@media (min-width: 600px) and (max-width: 699px) {
-  .logo-img2 {
-    margin-right: 11rem;
-  }
-}
-
-@media (min-width: 500px) and (max-width: 599px) {
-  .logo-img2 {
-    margin-right: 11rem;
-  }
-}
-
-@media (min-width: 400px) and (max-width: 499px) {
-  .logo-img2 {
-    margin-right: 7.5rem;
-  }
-}
-@media (min-width: 300px) and (max-width: 399px) {
-  .logo-img2 {
-    margin-right: 6rem;
+  /* margin-right: 3rem; */
+  transition: transform 0.3s, box-shadow 0.3s;
+  &:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
   }
 }
 
@@ -273,17 +280,21 @@ body {
   .search {
     width: 75%;
   }
+  .techstack-row {
+    width: 100%;
+  }
+  .item {
+    width: 7rem;
+    height: 5rem;
+  }
 }
 
 /* Hide the second logo image for screen width 999px and above */
 @media (min-width: 1000px) {
   .logo-img2 {
     display: none;
-    
   }
 }
-  
-
 
 @media screen and (max-width: 768px) {
   .introduction {
@@ -306,7 +317,6 @@ body {
   }
   .home-parent {
     flex-direction: column;
-
   }
   .home-content {
     width: 0;
@@ -320,6 +330,4 @@ body {
   .downloadPdf {
     margin-top: 2rem;
   }
-
-
 }

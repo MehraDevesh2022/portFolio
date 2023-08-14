@@ -31,7 +31,7 @@ import { PUBLIC_KEY, TEMPLATE_ID, SERVICE_ID } from "../../../../SECURE.JS";
     input: {
       border: `4px solid white`,
       backgroundColor: "#152b61",
-   
+
       color: `white`,
 
       fontWeight: 500,
@@ -77,9 +77,14 @@ import { PUBLIC_KEY, TEMPLATE_ID, SERVICE_ID } from "../../../../SECURE.JS";
       transition: "250ms ease-in-out",
       "&:hover": {
         transform: "scale(1.1)",
-        border: `4px solid #32CD30`,
-        backgroundColor: "#32CD30",
+        border: `4px solid #f2f2f2`,
+        backgroundColor: "#f2f2f2",
         color: `white`,
+      },
+    },
+    freecodecamp: {
+      "&:hover": {
+        color: "black !important",
       },
     },
     detailsIcon: {
@@ -340,7 +345,9 @@ const Contact = () => {
                 <div className={classes.detailsIcon}>
                   <FiAtSign />
                 </div>
-                <p style={{ color: "white" }}>{contactsData.email}</p>
+                <p style={{ color: "white" }} className="email">
+                  {contactsData.email}
+                </p>
               </a>
               <a
                 href={`tel:${contactsData.phone}`}
@@ -349,9 +356,7 @@ const Contact = () => {
                 <div className={classes.detailsIcon}>
                   <FiPhone />
                 </div>
-                <p style={{ color: "white", marginLeft: "-1.5rem" }}>
-                  {contactsData.phone}
-                </p>
+                <p style={{ color: "white" }}>{contactsData.phone}</p>
               </a>
 
               <div className="personal-details">
@@ -463,6 +468,7 @@ const Contact = () => {
                     <FaFreeCodeCamp
                       aria-label="freecodecamp"
                       style={{ color: "#f2f2f2" }}
+                      className={classes.freecodecamp}
                     />
                   </a>
                 )}

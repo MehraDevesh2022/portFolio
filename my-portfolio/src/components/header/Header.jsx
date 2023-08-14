@@ -4,22 +4,18 @@ import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
-
+import Sidebar from "./SideBar";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
-import Sidebar from "./SideBar";
-// import CodeIcon from "@mui/icons-material/Code";
-import { Link  ,useNavigate} from "react-router-dom";
+import logo from "../../assets/logo.png"; 
+import CodeOutlinedIcon from "@mui/icons-material/CodeOutlined";
+import { Link } from "react-router-dom";
 import FaceRoundedIcon from "@mui/icons-material/FaceRounded";
 import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
 import FolderSharedRoundedIcon from "@mui/icons-material/FolderSharedRounded";
 import CallRoundedIcon from "@mui/icons-material/CallRounded";
 import { BsGithub } from "react-icons/bs";
-  // import logo from "../../assets/My project.png";
-
-  import logo from "../../assets/my-logo.png";
- 
 
 const pages = [
   { text: "Home", href: "/" },
@@ -38,8 +34,9 @@ const pageIcons = [
 
 const Header = () => {
   // const [anchorElNav, setAnchorElNav] = useState(null);
+
  const [sideMenuOpen, setSideMenuOpen] = useState(false);
- const navigate = useNavigate();
+//  const navigate = useNavigate();
  const handleToggleSideMenu = () => {
    setSideMenuOpen(!sideMenuOpen);
  };
@@ -48,7 +45,6 @@ const Header = () => {
    setSideMenuOpen(false);
  };
 
-
   return (
     <AppBar
       position="sticky"
@@ -56,24 +52,34 @@ const Header = () => {
         backgroundColor: "#152b61",
         boxShadow:
           "0px 4px 6px rgba(0, 0, 0, 0.1), 0px 8px 16px rgba(0, 0, 0, 0.1)",
-        padding: "0.5rem 0",
       }}
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <img
-            src={logo} // Use your imported logo here
-            alt="Logo"
-            className="logo-img"
-            onClick={() => navigate("/")}
-          />
-          <Box
+          <img src={logo} alt="logo" className="logo-img" />
+          <Typography
+            variant="h6"
+            noWrap
+            component="a"
+            href="/"
             sx={{
-              flexGrow: 1,
-              display: { xs: "flex", md: "none" },
-              textAlign: "center",
+              mr: 2,
+              display: { xs: "none", md: "flex" },
+              fontFamily: "monospace",
+              fontWeight: 800,
+              letterSpacing: ".2rem",
+              color: "inherit",
+              fontSize: "1.5rem",
+              textDecoration: "none",
+              "&:hover": {
+                color: "#32cd30",
+              },
             }}
           >
+            Devesh Mehra
+          </Typography>
+
+          <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" } }}>
             <IconButton
               size="large"
               aria-label="account of current user"
@@ -88,7 +94,7 @@ const Header = () => {
               <Sidebar isOpen={sideMenuOpen} onClose={handleCloseSideMenu} />
             )}
           </Box>
-
+          <img src={logo} alt="logo" className="logo-img2" />
           <Typography
             variant="h5"
             noWrap
@@ -102,19 +108,14 @@ const Header = () => {
               fontWeight: 800,
               letterSpacing: ".1rem",
               color: "inherit",
-              textDecoration: "none",
               fontSize: "1.5rem",
+              textDecoration: "none",
               "&:hover": {
-                color: "#32CD30",
+                color: "#32cd30",
               },
             }}
           >
-            <img
-              src={logo} // Use your imported logo here
-              alt="Logo"
-              className="logo-img2"
-              onClick={() => navigate("/")}
-            />
+            Devesh Mehra
           </Typography>
           <Box
             justifyContent="flex-end"

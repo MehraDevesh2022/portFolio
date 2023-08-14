@@ -69,19 +69,19 @@ const AboutInfo = () => {
       </div>
 
       <TechStack />
+
+      <Tools />
+
       <h1
         style={{
-          marginTop: "3rem",
+          marginTop: "4rem",
           fontFamily: "Fira Code",
           fontWeight: "bold",
+        
         }}
       >
-
-   {/* Tools */}
-
-   <Tools/>
-
-        My <span style={{ color: "#32CD30" , marginTop : "5rem " }}>Github</span> Contribution Graph
+        {/* Tools */}
+        My <span style={{ color: "#32CD30" }}>Github</span> Contribution Graph
       </h1>
       <br></br>
       <div className="github-graph">
@@ -90,7 +90,7 @@ const AboutInfo = () => {
           username="MehraDevesh2022"
           blockMargin={4}
           blockSize={16}
-          fontSize={18}
+          fontSize={16}
           color={"#32CD30"}
         />
       </div>

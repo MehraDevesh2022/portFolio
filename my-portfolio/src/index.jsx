@@ -5,14 +5,16 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import 'semantic-ui-css/semantic.min.css'
 import { inject } from '@vercel/analytics';
- 
+import {BrowserRouter} from "react-router-dom"
 inject();
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
+  <>
+    <BrowserRouter>
     <App />
-  </React.StrictMode>
+    </BrowserRouter>  
+  </>
 );
 
 

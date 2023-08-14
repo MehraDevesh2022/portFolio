@@ -8,10 +8,19 @@ import {
   DiNodejs,
   DiMongodb,
 } from "react-icons/di";
-import { CgCPlusPlus } from "react-icons/cg";
-import { SiMysql } from "react-icons/si";
-import { FaAws, FaDocker } from "react-icons/fa";
-import { SiSpringboot } from "react-icons/si";
+import { FaCuttlefish } from "react-icons/fa";
+import {
+  SiMui,
+  SiChakraui,
+  SiTypescript,
+ SiPostgresql,
+  SiHtml5,
+  SiCss3,
+} from "react-icons/si";
+
+
+
+
 
 const TechStack = () => {
   const [width, setWidth] = useState(1000);
@@ -36,7 +45,7 @@ const TechStack = () => {
         </span>
       </h1>
       <div className="techstack-row">
-        <Card.Group itemsPerRow={width > 750 ? 6 : 2}>
+        <Card.Group itemsPerRow={width > 450 ? 6 : 2}>
           <Card
             raised
             className="item"
@@ -45,10 +54,16 @@ const TechStack = () => {
               boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.5)",
             }}
           >
-            <CgCPlusPlus
-              style={{ width: "60%", height: "auto", color: "black" }}
+            <FaCuttlefish
+              style={{
+                width: "50%",
+                height: "auto",
+
+                color: "#FFFFFF",
+              }}
             />
           </Card>
+
           <Card
             raised
             className="item"
@@ -59,6 +74,7 @@ const TechStack = () => {
           >
             <DiJava style={{ width: "60%", height: "auto", color: "red" }} />
           </Card>
+
           <Card
             raised
             className="item"
@@ -71,6 +87,54 @@ const TechStack = () => {
               style={{ width: "60%", height: "auto", color: "#FFC300" }}
             />
           </Card>
+
+          <Card
+            raised
+            className="item"
+            style={{
+              backgroundColor: "#10265ddc",
+              boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.5)",
+            }}
+          >
+            <SiTypescript
+              style={{
+                width: "60%",
+                height: "auto",
+                backgroundColor: "#FFFFFF",
+                color: "#007ACC",          
+              }}
+            />
+          </Card>
+          <Card
+            raised
+            className="item"
+            style={{
+              backgroundColor: "#10265ddc",
+              boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.5)",
+            }}
+          >
+            <SiHtml5
+              style={{
+                width: "60%",
+                height: "auto",
+
+                color: "#E34F26",
+              }}
+            />
+          </Card>
+          <Card
+            raised
+            className="item"
+            style={{
+              backgroundColor: "#10265ddc",
+              boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.5)",
+            }}
+          >
+            <SiCss3
+              style={{ width: "60%", height: "auto", color: "#1572B6" }}
+            />
+          </Card>
+
           <Card
             raised
             className="item"
@@ -83,6 +147,30 @@ const TechStack = () => {
               style={{ width: "60%", height: "auto", color: "#61DBFB" }}
             />
           </Card>
+
+          <Card
+            raised
+            className="item"
+            style={{
+              backgroundColor: "#10265ddc",
+              boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.5)",
+            }}
+          >
+            <SiMui style={{ width: "60%", height: "auto", color: "#1976D2" }} />
+          </Card>
+          <Card
+            raised
+            className="item"
+            style={{
+              backgroundColor: "#10265ddc",
+              boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.5)",
+            }}
+          >
+            <SiChakraui
+              style={{ width: "60%", height: "auto", color: "#3182CE" }}
+            />
+          </Card>
+
           <Card
             raised
             className="item"
@@ -95,6 +183,7 @@ const TechStack = () => {
               style={{ width: "60%", height: "auto", color: "green" }}
             />
           </Card>
+
           <Card
             raised
             className="item"
@@ -115,42 +204,8 @@ const TechStack = () => {
               boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.5)",
             }}
           >
-            <SiMysql
-              style={{ width: "60%", height: "auto", color: "#00758f" }}
-            />
-          </Card>
-          <Card
-            raised
-            className="item"
-            style={{
-              backgroundColor: "#10265ddc",
-              boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.5)",
-            }}
-          >
-            <SiSpringboot
-              style={{ width: "60%", height: "auto", color: "green" }}
-            />
-          </Card>
-          <Card
-            raised
-            className="item"
-            style={{
-              backgroundColor: "#10265ddc",
-              boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.5)",
-            }}
-          >
-            <FaAws style={{ width: "60%", height: "auto", color: "orange" }} />
-          </Card>
-          <Card
-            raised
-            className="item"
-            style={{
-              backgroundColor: "#10265ddc",
-              boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.5)",
-            }}
-          >
-            <FaDocker
-              style={{ width: "60%", height: "auto", color: "#0db7ed" }}
+            <SiPostgresql
+              style={{ width: "60%", height: "auto", color: "#336791" }}
             />
           </Card>
         </Card.Group>

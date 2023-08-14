@@ -6,8 +6,13 @@ import {
   SiPostman,
   SiSlack,
   SiVercel,
-  SiMacos,
+  SiGit,
+  SiFigma,
+  SiCanva,
+  SiFirebase,
 } from "react-icons/si";
+
+// import { VscTerminalCmd } from "react-icons/vsc";
 
 
 const Tools = () => {
@@ -29,12 +34,11 @@ const Tools = () => {
             fontWeight: "bold",
           }}
         >
-           use
+          use
         </span>
       </h1>
       <div className="techstack-row">
-        <Card.Group itemsPerRow={width > 750 ? 5 : 1}>
- 
+        <Card.Group itemsPerRow={width > 750 ? 8 : 1}>
           <Card
             raised
             className="item"
@@ -44,7 +48,7 @@ const Tools = () => {
             }}
           >
             <SiVisualstudiocode
-              style={{ width: "60%", height: "auto", color: "red" }}
+              style={{ width: "60%", height: "auto", color: "#007ACC" }}
             />
           </Card>
           <Card
@@ -56,7 +60,41 @@ const Tools = () => {
             }}
           >
             <SiPostman
-              style={{ width: "60%", height: "auto", color: "#FFC300" }}
+              style={{ width: "60%", height: "auto", color: "#FF6C37" }}
+            />
+          </Card>
+          <Card
+            raised
+            className="item"
+            style={{
+              backgroundColor: "#10265ddc",
+              boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.5)",
+            }}
+          >
+            <SiGit style={{ width: "60%", height: "auto", color: "#FF6C37" }} />
+          </Card>
+          <Card
+            raised
+            className="item"
+            style={{
+              backgroundColor: "#10265ddc",
+              boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.5)",
+            }}
+          >
+            <SiFigma
+              style={{ width: "60%", height: "auto", color: "#d4acc4  " }}
+            />
+          </Card>
+          <Card
+            raised
+            className="item"
+            style={{
+              backgroundColor: "#10265ddc",
+              boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.5)",
+            }}
+          >
+            <SiCanva
+              style={{ width: "60%", height: "auto", color: "#00C4CC    " }}
             />
           </Card>
           <Card
@@ -68,7 +106,7 @@ const Tools = () => {
             }}
           >
             <SiSlack
-              style={{ width: "60%", height: "auto", color: "#61DBFB" }}
+              style={{ width: "60%", height: "auto", color: "#36c5f0 " }}
             />
           </Card>
           <Card
@@ -79,7 +117,9 @@ const Tools = () => {
               boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.5)",
             }}
           >
-            <SiMacos style={{ width: "60%", height: "auto", color: "green" }} />
+            <SiFirebase
+              style={{ width: "60%", height: "auto", color: "#FFA611 " }}
+            />
           </Card>
           <Card
             raised
@@ -90,10 +130,9 @@ const Tools = () => {
             }}
           >
             <SiVercel
-              style={{ width: "60%", height: "auto", color: "green" }}
+              style={{ width: "60%", height: "auto", color: "#000000 " }}
             />
           </Card>
-      
         </Card.Group>
       </div>
     </div>

@@ -155,7 +155,7 @@
     line-height: 110%;
     font-weight: 500;
     font-family: var(--primaryFont);
-    width: 45%;
+    width: fit-content;
     word-break: break-word;
 }
 
@@ -248,8 +248,8 @@
         margin-bottom: 1.8rem;
     }
     .personal-details p {
-        margin-left: 1.2rem;
-        width: 95%;
+        margin-left: 2rem;
+      
     }
 }
 
