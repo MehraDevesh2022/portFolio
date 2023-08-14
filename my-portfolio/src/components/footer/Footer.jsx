@@ -11,15 +11,16 @@ import {
 import {SiHashnode} from "react-icons/si"
 const useStyles = makeStyles((theme) => ({
   footer: {
+
+    width: "100%",
     backgroundColor: "#152b61 !important",
     color: "white",
-    height: "fit-content",
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
     flexDirection: "column",
     gap: "2rem",
-       boxShadow: "0px 0px 4px 0px rgba(0, 0, 0, 0.6)",
+    boxShadow: "0px 0px 4px 0px rgba(0, 0, 0, 0.6)",
     padding: "2rem 0",
   },
   socialmedia: {

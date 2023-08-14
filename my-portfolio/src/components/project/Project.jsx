@@ -55,22 +55,27 @@ const filteredArticles = projectsData.filter((project) => {
           alignItems="center"
           justifyContent="center"
           spacing={3}
-          
-          
         >
-          {filteredArticles.map((project) => (
-            <SingleProjectCard
-           
-              key={project.id}
-              id={project.id}
-              name={project.projectName}
-              desc={project.projectDesc}
-              tags={project.tags}
-              code={project.code}
-              demo={project.demo}
-              image={project.image}
-            />
-          ))}
+          {filteredArticles.length === 0 ? (
+            <>
+            <p style={{height : "10rem" , fontSize : "2rem" , fontWeight : "bold" , color : "#F3F3F3" }}>No Poject Found</p>
+            </>
+          ) : (
+            <>
+              {filteredArticles.map((project) => (
+                <SingleProjectCard
+                  key={project.id}
+                  id={project.id}
+                  name={project.projectName}
+                  desc={project.projectDesc}
+                  tags={project.tags}
+                  code={project.code}
+                  demo={project.demo}
+                  image={project.image}
+                />
+              ))}
+            </>
+          )}
         </Grid>
       </div>
     </div>

@@ -1,5 +1,6 @@
 .projects{
     margin-bottom: 5rem;
+   
 }
 
 .projectPage {
@@ -29,7 +30,7 @@
 
 .search {
     color: white;
-    width: 40%;
+    width: 50%;
     height: 2.75rem;
     outline: none;
     border: none;
@@ -39,7 +40,7 @@
     font-size: 0.9rem;
     background-color: #10265ddc;
     box-shadow: inset 3px 3px 6px #ffffff10, inset -3px -3px 6px #00000060;
-    text-shadow: 2px 2px 4px #000000;
+    text-shadow: 2px 2px 1px #000000;
 }
 
 .search::placeholder {
@@ -113,4 +114,10 @@
 
 .project-card-link:hover {
     background-color: #32CD30;
+}
+
+@media screen and  (max-width : 999px){
+ .search {
+    width: 80%;
+ }
 }
