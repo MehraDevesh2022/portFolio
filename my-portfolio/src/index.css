@@ -318,7 +318,12 @@ body {
 .linktree-button:hover .linktree-icon {
   fill: #32cd30 !important;
 }
-
+.socialIcon:hover .freecodecamp {
+  color: black !important;
+}
+.socialIcon:hover .GitHub {
+  color: black !important;
+}
 @media (max-width: 999px) {
   .logo-img {
     display: none;

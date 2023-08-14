@@ -4,6 +4,7 @@ import { Snackbar, IconButton, SnackbarContent } from "@material-ui/core";
 import CloseIcon from "@material-ui/icons/Close";
 import isEmail from "validator/lib/isEmail";
 import { makeStyles } from "@material-ui/core/styles";
+import { useNavigate } from "react-router-dom";
 import {
   FaTwitter,
   FaLinkedinIn,
@@ -136,9 +137,9 @@ const Contact = () => {
 
    const [errMsg, setErrMsg] = useState("");
 
- 
+  const navigate = useNavigate();
 
-   const handleClose = (event, reason) => {
+   const handleClose = (reason) => {
      if (reason === "clickaway") {
        return;
      }
@@ -359,12 +360,17 @@ const Contact = () => {
                 <p style={{ color: "white" }}>{contactsData.phone}</p>
               </a>
 
-              <div className="personal-details">
+              <a
+                className="personal-details"
+                href="https://goo.gl/maps/qAiPwH8RWxdhqUFU8"
+                target="_blank" // Opens link in a new tab/window
+                rel="noopener noreferrer" // Recommended for security reasons when using target="_blank"
+              >
                 <div className={classes.detailsIcon}>
                   <HiOutlineLocationMarker />
                 </div>
                 <p style={{ color: "white" }}>{contactsData.address}</p>
-              </div>
+              </a>
 
               <div className="socialmedia-icons">
                 {socialsData.whatsapp && (
@@ -398,11 +404,12 @@ const Contact = () => {
                     href={socialsData.github}
                     target="_blank"
                     rel="noreferrer"
-                    className={classes.socialIcon}
+                    className={`${classes.socialIcon} socialIcon`}
                   >
                     <FaGithub
                       aria-label="GitHub"
                       style={{ color: "##1d1a1a" }}
+                      className={`${classes.GitHub} GitHub`}
                     />
                   </a>
                 )}
@@ -432,9 +439,9 @@ const Contact = () => {
                     />
                   </a>
                 )}
-                {socialsData.medium && (
+                {socialsData.hashnode && (
                   <a
-                    href={socialsData.medium}
+                    href={socialsData.hashnode}
                     target="_blank"
                     rel="noreferrer"
                     className={classes.socialIcon}
@@ -445,9 +452,9 @@ const Contact = () => {
                     />
                   </a>
                 )}
-                {socialsData.blogger && (
+                {socialsData.leetcode && (
                   <a
-                    href={socialsData.blogger}
+                    href={socialsData.leetcode}
                     target="_blank"
                     rel="noreferrer"
                     className={classes.socialIcon}
@@ -458,24 +465,24 @@ const Contact = () => {
                     />
                   </a>
                 )}
-                {socialsData.youtube && (
+                {socialsData.freecodecamp && (
                   <a
-                    href={socialsData.youtube}
+                    href={socialsData.freecodecamp}
                     target="_blank"
                     rel="noreferrer"
-                    className={classes.socialIcon}
+                    className={`${classes.socialIcon} socialIcon`}
                   >
                     <FaFreeCodeCamp
                       aria-label="freecodecamp"
                       style={{ color: "#f2f2f2" }}
-                      className={classes.freecodecamp}
+                      className={`${classes.freecodecamp} freecodecamp`}
                     />
                   </a>
                 )}
 
-                {socialsData.reddit && (
+                {socialsData.hackerrank && (
                   <a
-                    href={socialsData.reddit}
+                    href={socialsData.hackerrank}
                     target="_blank"
                     rel="noreferrer"
                     className={classes.socialIcon}

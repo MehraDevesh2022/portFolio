@@ -55,7 +55,10 @@ const Header = () => {
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <img src={logo} alt="logo" className="logo-img" />
+          <a href="/">
+            <img src={logo} alt="logo" className="logo-img" />
+          </a>
+
           <Typography
             variant="h6"
             noWrap
@@ -93,7 +96,12 @@ const Header = () => {
               <Sidebar isOpen={sideMenuOpen} onClose={handleCloseSideMenu} />
             )}
           </Box>
-          <img src={logo} alt="logo" className="logo-img2" />
+          <a href="/"
+          
+          >
+            <img src={logo} alt="logo" className="logo-img2" />
+          </a>
+
           <Typography
             variant="h5"
             noWrap

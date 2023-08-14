@@ -94,9 +94,9 @@ const Footer = () => {
             <FaInstagram aria-label="Instagram" style={{ color: "#d62976 " }} />
           </a>
         )}
-        {socialsData.medium && (
+        {socialsData.hashnode && (
           <a
-            href={socialsData.medium}
+            href={socialsData.hashnode}
             target="_blank"
             rel="noreferrer"
             className={classes.socialIcon}
