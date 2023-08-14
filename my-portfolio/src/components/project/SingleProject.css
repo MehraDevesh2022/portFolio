@@ -1,6 +1,6 @@
 .singleProject {
     box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.5);
-    width: 350px;
+    width: 330px;
     height: 400px;
     border-radius: 10px;
     display: flex;
@@ -76,7 +76,7 @@
 
 .singleProject .project--desc{
     position: absolute;
-    width: 95%;
+    width: 80%;
     height: 160px;
     left: 0;
     top: 0;

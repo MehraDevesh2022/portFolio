@@ -16,11 +16,28 @@ import {
 
 
 const Tools = () => {
-  const [width, setWidth] = useState(1000);
+ const [width, setWidth] = useState(window.innerWidth);
 
-  useEffect(() => {
-    setWidth(window.innerWidth);
-  }, []);
+ useEffect(() => {
+   const handleResize = () => {
+     setWidth(window.innerWidth);
+   };
+
+   window.addEventListener("resize", handleResize);
+
+   return () => {
+     window.removeEventListener("resize", handleResize);
+   };
+ }, []);
+
+ const getItemsPerRow = () => {
+   if (width >= 1000) {
+     return 8;
+  
+   } else {
+     return 4;
+   }
+ };
 
   return (
     <div className="techstack">
@@ -38,7 +55,7 @@ const Tools = () => {
         </span>
       </h1>
       <div className="techstack-row">
-        <Card.Group itemsPerRow={width > 750 ? 8 : 1}>
+        <Card.Group itemsPerRow={getItemsPerRow()}>
           <Card
             raised
             className="item"

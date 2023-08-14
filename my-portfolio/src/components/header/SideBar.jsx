@@ -22,11 +22,11 @@ import CloseIcon from "@material-ui/icons/Close";
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
-        width: "110%",
-        overflow: "hidden",
+        width: "100%",
+      
       },
       navMenu: {
-        fontSize: "2.5rem",
+        fontSize: "2rem",
         color: "white",
         cursor: "pointer",
         transform: "translateY(-10px)",
@@ -35,10 +35,10 @@ import CloseIcon from "@material-ui/icons/Close";
           color: "#32CD30",
         },
         [t.breakpoints.down("sm")]: {
-          fontSize: "2rem",
+          fontSize: "1.5rem",
         },
         [t.breakpoints.down("xs")]: {
-          fontSize: "2rem",
+          fontSize: "1.5rem",
         },
       },
       drawer: {
@@ -46,7 +46,7 @@ import CloseIcon from "@material-ui/icons/Close";
         width: "100%",
         height: "fit-content",
         color: "white",
-        padding: "4rem",
+        padding: "1.5rem",
         zIndex: 99,
       },
       MuiDrawer: {
@@ -142,7 +142,7 @@ const Sidebar = ({ isOpen, onClose }) => {
   const classes = useStyles();
 
   return (
-    <div className={classes.sideBar}  >
+    <div className={classes.sideBar}>
       <Drawer
         variant="temporary"
         classes={{ paper: classes.MuiDrawer }}
@@ -183,41 +183,37 @@ const Sidebar = ({ isOpen, onClose }) => {
             </Fade>
 
             <Fade left>
-              <NavLink to="/#resume" smooth={true} spy="true" duration={2000}>
+              <NavLink to="/Projects" smooth={true} spy="true" duration={2000}>
                 <div className={classes.drawerItem}>
                   <HiDocumentText className={classes.drawerIcon} />
-                  <span className={classes.drawerLinks}>Resume</span>
+                  <span className={classes.drawerLinks}>Projects</span>
                 </div>
               </NavLink>
             </Fade>
 
             <Fade left>
-              <NavLink to="/#services" smooth={true} spy="true" duration={2000}>
-                <div className={classes.drawerItem}>
-                  <BsFillGearFill className={classes.drawerIcon} />
-                  <span className={classes.drawerLinks}>Services</span>
-                </div>
-              </NavLink>
-            </Fade>
-
-            <Fade left>
-              <NavLink to="/about" smooth={true} spy={true} duration={2000}>
+              <NavLink to="/contact" smooth={true} spy={true} duration={2000}>
                 <div className={classes.drawerItem}>
                   <FaUser className={classes.drawerIcon} />
-                  <span className={classes.drawerLinks}>About</span>
+                  <span className={classes.drawerLinks}>Contact</span>
                 </div>
               </NavLink>
             </Fade>
             <Fade left>
-              <NavLink to="/#blog" smooth={true} spy="true" duration={2000}>
+              <NavLink
+                to="https://iam-dev.hashnode.dev/"
+                smooth={true}
+                spy="true"
+                duration={2000}
+              >
                 <div className={classes.drawerItem}>
                   <FaFolderOpen className={classes.drawerIcon} />
-                  <span className={classes.drawerLinks}>Blog</span>
+                  <span className={classes.drawerLinks}>Blogs</span>
                 </div>
               </NavLink>
             </Fade>
 
-           
+    
           </div>
         </div>
       </Drawer>

@@ -23,11 +23,30 @@ import {
 
 
 const TechStack = () => {
-  const [width, setWidth] = useState(1000);
+  const [width, setWidth] = useState(window.innerWidth);
 
   useEffect(() => {
-    setWidth(window.innerWidth);
+    const handleResize = () => {
+      setWidth(window.innerWidth);
+    };
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
   }, []);
+
+  const getItemsPerRow = () => {
+    if (width >= 1000) {
+      return 6;
+    } else
+    if (width >= 799 && width <= 999) {
+      return 4;
+    } else {
+      return 3;
+    }
+  };
 
   return (
     <div className="techstack">
@@ -45,7 +64,7 @@ const TechStack = () => {
         </span>
       </h1>
       <div className="techstack-row">
-        <Card.Group itemsPerRow={width > 450 ? 6 : 2}>
+        <Card.Group itemsPerRow={getItemsPerRow()}>
           <Card
             raised
             className="item"
@@ -56,8 +75,8 @@ const TechStack = () => {
           >
             <FaCuttlefish
               style={{
-                width: "50%",
-                height: "auto",
+                width: "fit-content",
+                height: "4rem",
 
                 color: "#FFFFFF",
               }}
@@ -72,7 +91,7 @@ const TechStack = () => {
               boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.5)",
             }}
           >
-            <DiJava style={{ width: "60%", height: "auto", color: "red" }} />
+            <DiJava style={{ width: "60%", height: "5rem", color: "red" }} />
           </Card>
 
           <Card
@@ -84,7 +103,7 @@ const TechStack = () => {
             }}
           >
             <DiJavascript1
-              style={{ width: "60%", height: "auto", color: "#FFC300" }}
+              style={{ width: "60%", height: "5rem", color: "#FFC300" }}
             />
           </Card>
 
@@ -99,9 +118,9 @@ const TechStack = () => {
             <SiTypescript
               style={{
                 width: "60%",
-                height: "auto",
+                height: "5rem",
                 backgroundColor: "#FFFFFF",
-                color: "#007ACC",          
+                color: "#007ACC",
               }}
             />
           </Card>
@@ -116,7 +135,7 @@ const TechStack = () => {
             <SiHtml5
               style={{
                 width: "60%",
-                height: "auto",
+                height: "5rem",
 
                 color: "#E34F26",
               }}
@@ -131,7 +150,7 @@ const TechStack = () => {
             }}
           >
             <SiCss3
-              style={{ width: "60%", height: "auto", color: "#1572B6" }}
+              style={{ width: "60%", height: "5rem", color: "#1572B6" }}
             />
           </Card>
 
@@ -144,7 +163,7 @@ const TechStack = () => {
             }}
           >
             <DiReact
-              style={{ width: "60%", height: "auto", color: "#61DBFB" }}
+              style={{ width: "60%", height: "5rem", color: "#61DBFB" }}
             />
           </Card>
 
@@ -156,7 +175,7 @@ const TechStack = () => {
               boxShadow: "0px 12px 20px rgba(0, 0, 0, 0.5)",
             }}
           >
-            <SiMui style={{ width: "60%", height: "auto", color: "#1976D2" }} />
+            <SiMui style={{ width: "60%", height: "5rem", color: "#1976D2" }} />
           </Card>
           <Card
             raised
@@ -167,7 +186,7 @@ const TechStack = () => {
             }}
           >
             <SiChakraui
-              style={{ width: "60%", height: "auto", color: "#3182CE" }}
+              style={{ width: "60%", height: "5rem", color: "#3182CE" }}
             />
           </Card>
 
@@ -180,7 +199,7 @@ const TechStack = () => {
             }}
           >
             <DiNodejs
-              style={{ width: "60%", height: "auto", color: "green" }}
+              style={{ width: "60%", height: "5rem", color: "green" }}
             />
           </Card>
 
@@ -193,7 +212,7 @@ const TechStack = () => {
             }}
           >
             <DiMongodb
-              style={{ width: "60%", height: "auto", color: "green" }}
+              style={{ width: "60%", height: "5rem", color: "green" }}
             />
           </Card>
           <Card
@@ -205,7 +224,7 @@ const TechStack = () => {
             }}
           >
             <SiPostgresql
-              style={{ width: "60%", height: "auto", color: "#336791" }}
+              style={{ width: "60%", height: "5rem", color: "#336791" }}
             />
           </Card>
         </Card.Group>

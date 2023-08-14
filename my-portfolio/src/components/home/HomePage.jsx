@@ -78,10 +78,12 @@ const HomePage = () => {
                 fontSize: "2.5rem",
                 position: "static",
               }}
+              className="home-animation"
             >
               HI
             </h1>
             <h1
+              className="home-animation"
               style={{
                 fontFamily: "Fira Code",
                 fontSize: "2.5rem",
@@ -130,7 +132,7 @@ const HomePage = () => {
       </div>
 
       <HomeBottomPage />
-    </div> 
+    </div>
   );
 };
 

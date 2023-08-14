@@ -7,7 +7,7 @@ import Fade from "react-reveal/Fade";
 import "./SingleProject.css";
 
 function SingleProject({ id, name, desc, tags, code, demo, image }) {
-  console.log(name);
+
   const useStyles = makeStyles((theme) => ({
     iconBtn: {
       display: "flex",

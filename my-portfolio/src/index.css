@@ -134,10 +134,10 @@ body {
   justify-content: center;
   align-items: center;
   transform: scale(0.7, 0.7);
-  width: 5rem;
+
   background-color: #10265ddc;
 
-  padding: 2rem 1rem !important;
+  padding: 1.5rem 1rem !important;
   box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.5) !important;
 }
 .item:hover {
@@ -165,7 +165,12 @@ body {
   display: flex;
   justify-content: space-evenly;
 }
-
+.about-heading {
+  margin-top: 3rem !important;
+  font-family: "Fira Code !important";
+  font-size: 2.5rem !important;
+  font-weight: bold !important;
+}
 .about-parent {
   display: flex;
   justify-content: space-evenly;
@@ -188,13 +193,19 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 80%;
+  margin: 0 auto;
 }
 
 .github-button {
   display: flex;
   justify-content: space-between;
 }
-
+.graph-heading {
+  margin-top: 4rem;
+  font-family: "Fira Code", monospace;
+  font-weight: bold;
+}
 .single-card {
   transform: scale(0.8, 0.8);
   box-shadow: 5px 5px 30px rgba(7, 73, 228, 0.4) !important;
@@ -228,6 +239,7 @@ body {
 .contact-text {
   font-size: xx-large !important;
 }
+
 
 .header-buttons {
   border-bottom: 5px solid #152b61 !important;
@@ -273,6 +285,40 @@ body {
   }
 }
 
+.linktree-button {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  padding: 10px 20px !important;
+  background-color: #32cd30 !important;
+  color: #fff !important;
+  font-weight: bold !important;
+  text-decoration: none !important;
+  border-radius: 5px !important;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1) !important;
+  transition: background-color 0.3s !important;
+}
+
+.linktree-button:hover {
+  background-color: #091c4df9 !important;
+  border-radius: 8px;
+  box-shadow: 0px 12px 20px rgba(0, 0, 0, 0.5);
+  transition: background-color 200ms ease-in-out;
+}
+
+.linktree-icon {
+  display: inline-block !important;
+  width: 24px !important;
+  height: 24px !important;
+  background-size: contain !important ;
+  margin-left: 5px !important;
+  fill: #f2f2f2 !important;
+}
+
+.linktree-button:hover .linktree-icon {
+  fill: #32cd30 !important;
+}
+
 @media (max-width: 999px) {
   .logo-img {
     display: none;
@@ -284,8 +330,7 @@ body {
     width: 100%;
   }
   .item {
-    width: 7rem;
-    height: 5rem;
+    padding: 1rem;
   }
 }
 
@@ -297,6 +342,23 @@ body {
 }
 
 @media screen and (max-width: 768px) {
+  
+  .intro-text{
+ 
+    font-size: 1.2rem !important;
+  }.about-heading {
+    font-size: 2rem !important;
+  }
+  .homeBottom-title {
+    font-size: 2em !important;
+    margin-bottom: 1rem !important;
+  }
+  .home-animation {
+    font-size: 1.8rem !important;
+  }
+  .graph-heading {
+    font-size: 1.5rem;
+  }
   .introduction {
     flex-direction: column;
     justify-content: center;
@@ -304,6 +366,10 @@ body {
   .home {
     margin-top: -2.5rem;
   }
+  .about-text {
+    font-size: 1rem;
+  }
+
   .intro-text {
     margin: auto;
     text-align: justify;
@@ -329,5 +395,15 @@ body {
 
   .downloadPdf {
     margin-top: 2rem;
+  }
+
+  @media screen and (max-width: 499px) {
+    .about-text {
+      font-size: 1rem;
+      width: 60%;
+    }
+    .about-image {
+      width: 35%;
+    }
   }
 }

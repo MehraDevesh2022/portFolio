@@ -38,14 +38,7 @@ function Experience() {
         </div>
         <div className="experience-description">
           <h1
-            style={{
-              margin: "4rem 0",
-              fontFamily: "Fira Code",
-              fontSize: "2.5rem",
-              fontWeight: "bold",
-              alignSelf : "flex-start"
-              
-            }}
+            className="experience-title"
           >
             <span style={{ color: "#32CD30" }}>Work</span> Experience
           </h1>

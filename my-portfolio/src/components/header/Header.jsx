@@ -9,27 +9,26 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
 import logo from "../../assets/logo.png"; 
-import CodeOutlinedIcon from "@mui/icons-material/CodeOutlined";
 import { Link } from "react-router-dom";
 import FaceRoundedIcon from "@mui/icons-material/FaceRounded";
 import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
 import FolderSharedRoundedIcon from "@mui/icons-material/FolderSharedRounded";
 import CallRoundedIcon from "@mui/icons-material/CallRounded";
-import { BsGithub } from "react-icons/bs";
+import { SiHashnode } from "react-icons/si";
 
 const pages = [
   { text: "Home", href: "/" },
   { text: "About", href: "/about" },
   { text: "Projects", href: "/projects" },
   { text: "Contact", href: "/contact" },
-  { text: "Fork Project", href: "https://github.com/Abhinav2011/my-portfolio" },
+  { text: "Blogs", href: "https://iam-dev.hashnode.dev/" },
 ];
 const pageIcons = [
   HomeRoundedIcon,
   FaceRoundedIcon,
   FolderSharedRoundedIcon,
   CallRoundedIcon,
-  BsGithub,
+  SiHashnode,
 ];
 
 const Header = () => {
