@@ -32,10 +32,10 @@ const pageIcons = [
 ];
 
 const Header = () => {
-  // const [anchorElNav, setAnchorElNav] = useState(null);
+
 
  const [sideMenuOpen, setSideMenuOpen] = useState(false);
-//  const navigate = useNavigate();
+
  const handleToggleSideMenu = () => {
    setSideMenuOpen(!sideMenuOpen);
  };
