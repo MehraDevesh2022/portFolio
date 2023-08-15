@@ -4,7 +4,7 @@ import { Snackbar, IconButton, SnackbarContent } from "@material-ui/core";
 import CloseIcon from "@material-ui/icons/Close";
 import isEmail from "validator/lib/isEmail";
 import { makeStyles } from "@material-ui/core/styles";
-import { useNavigate } from "react-router-dom";
+
 import {
   FaTwitter,
   FaLinkedinIn,
@@ -21,12 +21,12 @@ import { FiPhone, FiAtSign } from "react-icons/fi";
 import { HiOutlineLocationMarker } from "react-icons/hi";
 import contactsGreen from "../../assets/contactsGreen.svg";
 
-
+ 
 import { socialsData } from "./SocialData";
 import { contactsData } from "./ContactData";
 import "./Contacts.css";
 import emailjs from "emailjs-com";
-import { PUBLIC_KEY, TEMPLATE_ID, SERVICE_ID } from "../../../../SECURE.JS";
+// import { PUBLIC_KEY, TEMPLATE_ID, SERVICE_ID } from "../../../../SECURE.JS";
 
   const useStyles = makeStyles((t) => ({
     input: {
@@ -127,6 +127,10 @@ import { PUBLIC_KEY, TEMPLATE_ID, SERVICE_ID } from "../../../../SECURE.JS";
   }));
 
 const Contact = () => {
+  const PUBLIC_KEY = import.meta.env.VITE_PUBLIC_KEY;
+  const TEMPLATE_ID = import.meta.env.VITE_TEMPLATE_ID;
+  const SERVICE_ID =  import.meta.env.VITE_SERVICE_ID;
+
    const [open, setOpen] = useState(false);
    const classes = useStyles();
    const [name, setName] = useState("");
@@ -137,7 +141,7 @@ const Contact = () => {
 
    const [errMsg, setErrMsg] = useState("");
 
-  const navigate = useNavigate();
+
 
    const handleClose = (reason) => {
      if (reason === "clickaway") {

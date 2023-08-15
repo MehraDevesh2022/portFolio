@@ -1,6 +1,6 @@
 # My portfolio
 
-My portfolio built using React JS
+My portfolio built using React JS and Matrerial UI with smart Search and email functionality.
 
 ![App Screenshot](src/assets/githubImage.png)
 

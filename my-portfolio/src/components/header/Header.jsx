@@ -8,7 +8,7 @@ import Sidebar from "./SideBar";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import Button from "@mui/material/Button";
-import logo from "../../assets/logo.png"; 
+import logo from "../../assets/logo2.gif"; 
 import { Link } from "react-router-dom";
 import FaceRoundedIcon from "@mui/icons-material/FaceRounded";
 import HomeRoundedIcon from "@mui/icons-material/HomeRounded";
