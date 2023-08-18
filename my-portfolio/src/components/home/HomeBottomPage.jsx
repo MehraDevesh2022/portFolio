@@ -63,7 +63,7 @@ const HomeBottomPage = () => {
             variant="contained"
             endIcon={<SiLinktree class="linktree-icon" />}
             className="linktree-button"
-            href="Your_LinkTree_Link"
+            href="http://linktr.ee/iam_DEv22"
             target="_blank" // Open link in a new tab
           >
             LinkTree
