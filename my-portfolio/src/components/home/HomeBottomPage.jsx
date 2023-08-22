@@ -21,7 +21,7 @@ const HomeBottomPage = () => {
           <p>
             I am Devesh Mehra, A Computer Science and Engineering Graduate with
             good, <span style={{ color: "#32CD30" }}>problem solving </span>
-            skills  & passionate about Full-stack development
+            skills & passionate about Full-stack development
           </p>
           <br />
           <p>
@@ -35,6 +35,19 @@ const HomeBottomPage = () => {
             I am also proficient in C, Java and love{" "}
             <span style={{ color: "#32CD30" }}>solving problems</span> involving
             data structures and algorithms.
+          </p>
+          <br />
+          <p>
+            I'm also an active participant in various{" "}
+            <span style={{ color: "#32CD30" }}>open source programs </span> such
+            as{" "}
+            <span style={{ color: "#32CD30" }}>
+              GSSOC, SSOC, and Hacktoberfest{" "}
+            </span>
+            I contributed 9 successful pull requests to different projects
+            during recent{" "}
+            <span style={{ color: "#32CD30" }}>Hacktoberfest programe</span> and
+            earned rewards and Swags.
           </p>
           <br />
           <p>

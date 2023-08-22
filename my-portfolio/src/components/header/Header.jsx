@@ -132,6 +132,7 @@ const Header = () => {
               const Icon = pageIcons[index];
               return (
                 <div
+                  key={index}
                   style={{
                     display: "flex",
                     alignItems: "center",
@@ -141,6 +142,7 @@ const Header = () => {
                   <Link
                     to={page.href}
                     style={{ textDecoration: "none", color: "inherit" }}
+                    target={page.href.includes("http") ? "_blank" : "_self"}
                   >
                     <Button
                       className="header-buttons"
