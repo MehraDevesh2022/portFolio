@@ -7,7 +7,7 @@ import "./Experience.css";
 function ExperienceCard({ id, company, jobtitle, startYear, endYear }) {
   return (
     <Fade bottom>
-      <div key={id} className={`experience-card`}>
+      <div key={id} className="experience-card">
         <div className="expcard-img">
           <img src={expImgWhite} alt="expImgWhite" />
         </div>

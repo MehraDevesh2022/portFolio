@@ -12,10 +12,11 @@
 }
 
 .projectPage-container {
-    width: 100%;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 auto;
     justify-content: flex-start;
     flex-wrap: wrap;
 }

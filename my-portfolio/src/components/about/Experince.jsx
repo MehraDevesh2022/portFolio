@@ -13,6 +13,7 @@ function Experience() {
         jobtitle: "Frontend Developer",
         startYear: "2018",
         endYear: "2019",
+        links: "https://www.linkedin.com/",
       },
       {
         id: 2,
@@ -20,6 +21,7 @@ function Experience() {
         jobtitle: "Backend Developer",
         startYear: "2019",
         endYear: "2020",
+        links: "https://www.linkedin.com/",
       },
       {
         id: 3,
@@ -27,6 +29,7 @@ function Experience() {
         jobtitle: "Marketing",
         startYear: "2020",
         endYear: "Present",
+        links: "https://www.linkedin.com/",
       },
     ];
 
@@ -37,20 +40,25 @@ function Experience() {
           <img src={expGreen} alt="expGreen" />
         </div>
         <div className="experience-description">
-          <h1
-            className="experience-title"
-          >
+          <h1 className="experience-title">
             <span style={{ color: "#32CD30" }}>Work</span> Experience
           </h1>
           {experienceData.map((exp) => (
-            <ExperienceCard
+            <a
+              href={exp.links}
               key={exp.id}
-              id={exp.id}
-              jobtitle={exp.jobtitle}
-              company={exp.company}
-              startYear={exp.startYear}
-              endYear={exp.endYear}
-            />
+              className="experience-tag"
+              
+            >
+              <ExperienceCard
+                key={exp.id}
+                id={exp.id}
+                jobtitle={exp.jobtitle}
+                company={exp.company}
+                startYear={exp.startYear}
+                endYear={exp.endYear}
+              />
+            </a>
           ))}
         </div>
       </div>

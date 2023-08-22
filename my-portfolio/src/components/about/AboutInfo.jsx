@@ -50,18 +50,19 @@ const AboutInfo = () => {
           <p style={{ textAlign: "justify" }}>
             Hi people, I am{" "}
             <span style={{ color: "#32CD30", fontWeight: "bold" }}>
-              Abhinav Kumar
+              Devesh Mehra
             </span>{" "}
-            from Jamshedpur,India. I did my B.Tech in Information Technology
-            from{" "}
+            from Uttarakhand,India. I did my B.Tech in Computer Science and
+            Engineering from{" "}
             <span style={{ color: "#32CD30", fontWeight: "bold" }}>
-              VIT Vellore
+              NPSEI
             </span>{" "}
-            and currently I'm interning at{" "}
+            and currently I'm looking for opnings for{" "}
             <span style={{ color: "#32CD30", fontWeight: "bold" }}>
-              JP Morgan Chase & Co
+              {" "}
+              Software development{" "}
             </span>
-            .
+            Roles.
           </p>
           <br></br>
           <p style={{ textAlign: "justify" }}>
@@ -70,11 +71,19 @@ const AboutInfo = () => {
             <ul>
               <li>
                 <BsFillArrowRightSquareFill style={{ display: "inline" }} />{" "}
-                Watching Table Tennis
+                Exploring tech-stuff
               </li>
               <li>
                 <BsFillArrowRightSquareFill style={{ display: "inline" }} />{" "}
-                Gardening
+                Watching Anime
+              </li>
+              <li>
+                <BsFillArrowRightSquareFill style={{ display: "inline" }} />{" "}
+                Reading Manga
+              </li>
+              <li>
+                <BsFillArrowRightSquareFill style={{ display: "inline" }} />{" "}
+                Combate Sport's
               </li>
               <li>
                 <BsFillArrowRightSquareFill style={{ display: "inline" }} />{" "}

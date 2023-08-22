@@ -19,20 +19,20 @@ const HomeBottomPage = () => {
       <div className="introduction">
         <div className="intro-text">
           <p>
-            I am Devesh Mehra, currently interning at{" "}
-            <span style={{ color: "#32CD30" }}>JP Morgan Chase</span> as a
-            Software Engineer
+            I am Devesh Mehra, A Computer Science and Engineering Graduate with
+            good, <span style={{ color: "#32CD30" }}>problem solving </span>
+            skills  & passionate about Full-stack development
           </p>
           <br />
           <p>
             I love working as a{" "}
             <span style={{ color: "#32CD30" }}>Full Stack Developer</span> and
-            My tech stack includes NodeJs, SpringBoot, React, TypeScript. I am
-            also familar with AWS and Docker.
+            My tech stack includes NodeJs, Express.js, React, TypeScript. I am
+            also familar with NoSQL and SQL .
           </p>
           <br />
           <p>
-            I am also proficient in C++, Java and love{" "}
+            I am also proficient in C, Java and love{" "}
             <span style={{ color: "#32CD30" }}>solving problems</span> involving
             data structures and algorithms.
           </p>
@@ -43,8 +43,8 @@ const HomeBottomPage = () => {
           </p>
           <br />
           <p>
-            Checkout my <span style={{ color: "#32CD30" }}>resume</span> for
-            more about me.{" "}
+            Checkout my <span style={{ color: "#32CD30" }}>social links</span>{" "}
+            for more about me.{" "}
           </p>
         </div>
         <div className="intro-image">

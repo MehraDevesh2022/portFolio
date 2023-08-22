@@ -144,7 +144,16 @@ body {
   transform: scale(0.8, 0.8);
   transition: all 0.2s ease-in-out;
 }
-
+.experience-tag {
+  width: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+.experience-tag:hover{
+transform: scale(1.02);
+  transition: all 0.2s ease-in-out;
+  color: #32cd30;
+}
 .Typewriter__wrapper {
   line-height: 3rem !important;
 }
