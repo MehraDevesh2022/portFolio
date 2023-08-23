@@ -1,20 +1,22 @@
-import React from "react";
-import ReactDOM from "react-dom/client";
-import "./index.css";
-import App from "./App";
-import reportWebVitals from "./reportWebVitals";
-import "semantic-ui-css/semantic.min.css";
-import { inject } from "@vercel/analytics";
-import { BrowserRouter } from "react-router-dom";
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+import 'semantic-ui-css/semantic.min.css'
+import { inject } from '@vercel/analytics';
+import {BrowserRouter} from "react-router-dom"
 inject();
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <>
     <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    
+    <App />
+    </BrowserRouter>  
   </>
 );
+
 
 reportWebVitals();

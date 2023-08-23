@@ -1,21 +1,21 @@
-import one from "../../assets/Data01/01.jpg"
+import one from "../../assets/Data01/01.png"
 import two from "../../assets/Data01/02.png";
-import three from "../../assets/Data01/03.jpg";
+import three from "../../assets/Data01/03.png";
 import four from "../../assets/Data01/04.png";
 import five from "../../assets/Data01/05.png";
 import six from "../../assets/Data01/06.png";
 import seven from "../../assets/Data01/07.png";
 import eight from "../../assets/Data01/seven.svg";
-import nine from "../../assets/Data01/15.jpg";
+import nine from "../../assets/Data01/09.jpg";
 import Ten from "../../assets/Data01/six.svg";
 import Eleven from "../../assets/Data01/08.png";
-import Twelve from "../../assets/Data01/09.jpg";
-import Thirteen from "../../assets/Data01/10.jpg";
+import Twelve from "../../assets/Data01/09.png";
+import Thirteen from "../../assets/Data01/10.png";
 import Fourteen from "../../assets/Data01/11.png";
 import Fifteen from "../../assets/Data01/12.png";
 import SixTeen from "../../assets/Data01/13.png";
-import Seventeen from "../../assets/Data01/14.jpg";
-import Eightteen from "../../assets/Data01/18.png";
+import Seventeen from "../../assets/Data01/14.png";
+
 
 
 
@@ -80,7 +80,7 @@ export const projectsData = [
       "TaskPro is a full-stack to-do app. It allows users to create, update, and delete tasks.",
     tags: ["HTML5", "CSS3", "JavaScript", "Node.js", "Express.js", "MongoDB"],
     code: "https://github.com/MehraDevesh2022/TaskPro",
-    demo: "https://busy-teal-lion-robe.cyclic.cloud/",
+    demo: "https://handsome-leotard-jay.cyclic.app/",
     image: four,
   },
   {
@@ -212,16 +212,6 @@ export const projectsData = [
     code: "https://github.com/MehraDevesh2022/pixgrid",
     demo: "https://pixgrid.netlify.app/",
     image: Seventeen,
-  },
-  {
-    id: 18,
-    projectName: "My Portfolio",
-    projectDesc:
-      "My Portfolio is a simple portfolio website built using React, Material UI, and CSS. ",
-    tags: ["React", "material ui", "css", "vite"],
-    code: "https://github.com/MehraDevesh2022/portFolio",
-    demo: "https://iam-devesh.tech/",
-    image: Eightteen,
   },
 ];
 

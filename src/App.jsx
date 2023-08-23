@@ -1,5 +1,6 @@
+import React from "react";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import "./index.css";
-import { Routes, Route } from "react-router-dom";
 import Header from "./components/header/Header";
 import HomePage from "./components/home/HomePage";
 import Contact from "./components/contact/Contact";
@@ -11,17 +12,17 @@ import ParticleBackground from "./components/background/ParticleBackground";
 const App = () => {
   return (
     <div className="App">
-      <ParticleBackground className="particle"></ParticleBackground>
-      <div className="AppContent">
+      <Router>
+        <ParticleBackground className="particle"></ParticleBackground>
         <Header />
-        <Routes>
-          <Route exact path="/" element={<HomePage />}></Route>
-          <Route exact path="/projects" element={<Project />}></Route>
-          <Route exact path="/contact" element={<Contact />}></Route>
-          <Route exact path="/about" element={<About />}></Route>
-        </Routes>
-      </div>
-      <Footer />
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/projects" component={Project} />
+          <Route exact path="/about" component={About} />
+        </Switch>
+        <Footer />
+      </Router>
     </div>
   );
 };
