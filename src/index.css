@@ -277,24 +277,20 @@ transform: scale(1.02);
   cursor: pointer;
   margin-top: 5px;
   margin-right: 2px;
-
 }
-
-.logo-img:hover {
-  transform: scale(1.1);
+  .logo-img:hover {
+    transform: scale(1.1);
   margin-right: 4px;
 }
-
-
 .logo-img2 {
   height: 55px;
   margin-top: 5px;
   transition: transform 0.3s, box-shadow 0.3s;
- 
+
 }
 
-.logo-img2:hover {
-  transform: scale(1.02);
+ .logo-img2:hover {
+    transform: scale(1.02);
   margin-right: 2px;
 }
 

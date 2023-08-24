@@ -1,20 +1,20 @@
-import one from "../../assets/Data01/01.png"
+import one from "../../assets/Data01/01.jpg"
 import two from "../../assets/Data01/02.png";
-import three from "../../assets/Data01/03.png";
+import three from "../../assets/Data01/03.jpg";
 import four from "../../assets/Data01/04.png";
 import five from "../../assets/Data01/05.png";
 import six from "../../assets/Data01/06.png";
 import seven from "../../assets/Data01/07.png";
 import eight from "../../assets/Data01/seven.svg";
-import nine from "../../assets/Data01/09.jpg";
+import nine from "../../assets/Data01/15.jpg";
 import Ten from "../../assets/Data01/six.svg";
 import Eleven from "../../assets/Data01/08.png";
-import Twelve from "../../assets/Data01/09.png";
-import Thirteen from "../../assets/Data01/10.png";
+import Twelve from "../../assets/Data01/09.jpg";
+import Thirteen from "../../assets/Data01/10.jpg";
 import Fourteen from "../../assets/Data01/11.png";
 import Fifteen from "../../assets/Data01/12.png";
 import SixTeen from "../../assets/Data01/13.png";
-import Seventeen from "../../assets/Data01/14.png";
+import Seventeen from "../../assets/Data01/14.jpg";
 
 
 
