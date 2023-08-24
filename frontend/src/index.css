@@ -405,15 +405,14 @@ transform: scale(1.02);
 
   .homepage-avatar {
     width: 100%;
+    margin-top: -15rem !important;
   }
 
   .downloadPdf {
     margin-top: 2rem;
   }
 
-      .homepage-avatar {
-margin-top: -10rem;
-  }
+  
 
   @media screen and (max-width: 499px) {
     .about-text {
@@ -430,15 +429,20 @@ margin-top: -10rem;
 
   }
 
+      .homepage-avatar {
+   margin-top: -13rem !important;
+  }
+
 }
 
 
 @media screen  and(max-width: 399px) {
-    .rounded {
-margin-top: -8rem;
-  }
+
   .homeBottom-title{
     font-size: 1.5rem !important;
+  }
+       .homepage-avatar {
+   margin-top: -14rem !important;
   }
 
 }
