@@ -1,4 +1,4 @@
-import one from "../../assets/Data01/01.jpg"
+import one from "../../assets/Data01/01.jpg";
 import two from "../../assets/Data01/02.png";
 import three from "../../assets/Data01/03.jpg";
 import four from "../../assets/Data01/04.png";
@@ -15,9 +15,7 @@ import Fourteen from "../../assets/Data01/11.png";
 import Fifteen from "../../assets/Data01/12.png";
 import SixTeen from "../../assets/Data01/13.png";
 import Seventeen from "../../assets/Data01/14.jpg";
-
-
-
+import Eightteen from "../../assets/Data01/18.png";
 
 export const projectsData = [
   {
@@ -80,7 +78,7 @@ export const projectsData = [
       "TaskPro is a full-stack to-do app. It allows users to create, update, and delete tasks.",
     tags: ["HTML5", "CSS3", "JavaScript", "Node.js", "Express.js", "MongoDB"],
     code: "https://github.com/MehraDevesh2022/TaskPro",
-    demo: "https://handsome-leotard-jay.cyclic.app/",
+    demo: "https://busy-teal-lion-robe.cyclic.cloud/",
     image: four,
   },
   {
@@ -212,6 +210,16 @@ export const projectsData = [
     code: "https://github.com/MehraDevesh2022/pixgrid",
     demo: "https://pixgrid.netlify.app/",
     image: Seventeen,
+  },
+  {
+    id: 18,
+    projectName: "My Portfolio",
+    projectDesc:
+      "My Portfolio is a simple portfolio website built using React, Material UI, and CSS. ",
+    tags: ["React", "material ui", "css", "vite"],
+    code: "https://github.com/MehraDevesh2022/portFolio",
+    demo: "https://iam-devesh.tech/",
+    image: Eightteen,
   },
 ];
 
