@@ -399,7 +399,7 @@ transform: scale(1.02);
     flex-direction: column;
   }
   .home-content {
-    width: 0;
+    width: 90%;
     margin: auto;
   }
 
@@ -411,6 +411,10 @@ transform: scale(1.02);
     margin-top: 2rem;
   }
 
+      .homepage-avatar {
+margin-top: -10rem;
+  }
+
   @media screen and (max-width: 499px) {
     .about-text {
       font-size: 1rem;
@@ -420,4 +424,22 @@ transform: scale(1.02);
       width: 35%;
     }
   }
+  .intro-text {
+  font-size: 1rem !important;
+  letter-spacing: 0.1rem;
+
+  }
+
 }
+
+
+@media screen  and(max-width: 399px) {
+    .rounded {
+margin-top: -8rem;
+  }
+  .homeBottom-title{
+    font-size: 1.5rem !important;
+  }
+
+}
+  

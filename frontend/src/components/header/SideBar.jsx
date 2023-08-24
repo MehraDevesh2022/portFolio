@@ -9,7 +9,7 @@ import { FaUser, FaFolderOpen } from "react-icons/fa";
 import { makeStyles } from "@material-ui/core/styles";
 import Drawer from "@material-ui/core/Drawer";
 import CloseIcon from "@material-ui/icons/Close";
-
+import resumePdf from "../../assets/Abhinav_Resume.pdf";
 
     const useStyles = makeStyles((t) => ({
       sideBar: {
@@ -174,7 +174,7 @@ const Sidebar = ({ isOpen, onClose }) => {
             </Fade>
 
             <Fade left>
-              <NavLink to="/#about" smooth={true} spy="true" duration={2000}>
+              <NavLink to="/about" smooth={true} spy="true" duration={2000}>
                 <div className={classes.drawerItem}>
                   <FaUser className={classes.drawerIcon} />
                   <span className={classes.drawerLinks}>About</span>
@@ -212,8 +212,22 @@ const Sidebar = ({ isOpen, onClose }) => {
                 </div>
               </NavLink>
             </Fade>
-
-    
+           
+            <Fade left>
+              <NavLink
+                to="https://iam-dev.hashnode.dev/"
+                smooth={true}
+                spy="true"
+                duration={2000}
+              >
+                <div className={classes.drawerItem}>
+                  <FaFolderOpen className={classes.drawerIcon} />
+                  <span className={classes.drawerLinks}>Resume</span>
+                </div>
+              </NavLink>
+            </Fade>
+           
+           
           </div>
         </div>
       </Drawer>
