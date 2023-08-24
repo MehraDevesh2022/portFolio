@@ -1,7 +1,7 @@
 import "./index.css";
 import { Routes, Route } from "react-router-dom";
 import Header from "./components/header/Header";
-import HomePage from "./components/home/HomePage";
+import Home from "./components/home/HomePage";
 import Contact from "./components/contact/Contact";
 import Project from "./components/project/Project";
 import About from "./components/about/AboutInfo";
@@ -15,7 +15,7 @@ const App = () => {
       <div className="AppContent">
         <Header />
         <Routes>
-          <Route exact path="/" element={<HomePage />}></Route>
+          <Route exact path="/" element={<Home />}></Route>
           <Route exact path="/projects" element={<Project />}></Route>
           <Route exact path="/contact" element={<Contact />}></Route>
           <Route exact path="/about" element={<About />}></Route>
