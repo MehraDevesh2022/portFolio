@@ -44,10 +44,10 @@ An interactive portfolio website built using React, Material-UI, and EmailJS.
 3. In your project's `.env` file, add the following values with your EmailJS information:
 
     ```bash
-     VITE_SERVICE_ID=service_13fvzbi
-     VITE_TEMPLATE_ID=template_sbtbhc8
-     VITE_PUBLIC_KEY=bKNimTgQwYbraIIsX
-     
+     VITE_SERVICE_ID= ##############
+     VITE_TEMPLATE_ID=##############
+     VITE_PUBLIC_KEY=##############
+
     ```
 
 
