@@ -279,7 +279,7 @@ transform: scale(1.02);
   margin-right: 2px;
 }
   .logo-img:hover {
-    transform: scale(1.1);
+    transform: scale(1.1);  
   margin-right: 4px;
 }
 .logo-img2 {
