@@ -15,7 +15,11 @@ An interactive portfolio website built using React, Material-UI, and EmailJS.
 ## Demo
 
 
-![demo](https://github.com/MehraDevesh2022/portFolio/assets/96515074/2a4cb5ee-5cc7-4f43-987e-3259747591f4)
+
+
+https://github.com/MehraDevesh2022/portFolio/assets/96515074/13defbdc-bf61-4260-8df9-d78d102cce2c
+
+
 
 ---
 ## Installation
