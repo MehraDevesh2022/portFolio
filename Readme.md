@@ -43,5 +43,5 @@ Check out the live demo of the portfolio: [Live Demo](https://iam-devesh.tech/)
 
     ** Open to exciting opportunities as a Front-End / Back-End / Full Stack Developer. Let's connect! **
       
-    ** Connect with me on [LinkedIn](https://www.linkedin.com/in/devesh-mehra-2022/) **
-    ** Portfolio 
+    ** Connect with me on [![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue)](https://www.linkedin.com/in/devesh-mehra-2022/) **
+    ** Check out my [![Portfolio](https://img.shields.io/badge/Portfolio-Website-green)](https://iam-devesh.tech/) **
