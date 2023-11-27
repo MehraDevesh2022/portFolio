@@ -54,15 +54,17 @@ const AboutInfo = () => {
             </span>{" "}
             from Uttarakhand,India. I did my B.Tech in Computer Science and
             Engineering from{" "}
-            <span style={{ color: "#32CD30", fontWeight: "bold" }}>
-              NPSEI
-            </span>{" "}
+            <span style={{ color: "#32CD30", fontWeight: "bold" }}>NPSEI</span>{" "}
             and currently I'm looking for opnings for{" "}
             <span style={{ color: "#32CD30", fontWeight: "bold" }}>
               {" "}
               Software development{" "}
             </span>
-            Roles.
+            Roles & along with that I'm learning{" "}
+            <span style={{ color: "#32CD30", fontWeight: "bold" }}>
+              Next.js {""}
+            </span>
+            fullstack framework.
           </p>
           <br></br>
           <p style={{ textAlign: "justify" }}>
