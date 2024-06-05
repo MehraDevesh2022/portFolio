@@ -6,6 +6,15 @@ import ExperienceCard from "./ExperienceCard";
 function Experience() {
   const experienceData = [
     {
+      id: 0,
+      company: "Freelancer",
+      jobtitle: "Freelance Developer",
+      startYear: "Apr 2024",
+      endYear: "",
+      links:
+        "https://www.linkedin.com/in/iam-devesh/",
+    },
+    {
       id: 1,
       company: "Fourth Brother",
       jobtitle: "Fullstack Developer",
