@@ -199,7 +199,7 @@ const Sidebar = ({ isOpen, onClose }) => {
 
             <Fade left>
               <NavLink
-                to="https://drive.google.com/file/d/1pVGq6ihjhc4iYeHqnc9Hc4FNVqm0hnxT/view?usp=drive_link"
+                to="https://drive.google.com/file/d/1rXE4C268lz7iVcNepFJIr-48exiQOfuC/view?usp=drive_link"
                 smooth={true}
                 spy="true"
                 duration={2000}

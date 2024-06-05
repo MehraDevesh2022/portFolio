@@ -7,17 +7,17 @@ function Experience() {
   const experienceData = [
     {
       id: 1,
-      company: "Indusfly Technologies Pvt. Ltd.",
-      jobtitle: "Fullstack Developer Intern",
-      startYear: "May 2023 ",
-      endYear: "Oct 2023",
+      company: "Fourth Brother",
+      jobtitle: "Fullstack Developer",
+      startYear: "Apr 2023 ",
+      endYear: "Apr 2024",
       links:
-        "https://drive.google.com/file/d/1vfzaNxc0kb06VoIDoxsadx4uPlyIC3dT/view",
+        "https://drive.google.com/file/d/1vfzaNxc0kb06VoIDoxsadx4uPlyIC3dT",
     },
     {
       id: 2,
       company: "Pepcoding Education (OPC) Private Ltd.",
-      jobtitle: "Software Development Intern",
+      jobtitle: "Software Developer",
       startYear: "Sep 2022 ",
       endYear: " Apr 2023",
       links:
