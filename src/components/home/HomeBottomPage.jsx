@@ -4,7 +4,7 @@ import Tilt from "react-parallax-tilt";
 import { SiLinktree } from "react-icons/si";
 import { Button } from "@mui/material";
 
-const resumeURL ="https://drive.google.com/file/d/15s74dvQI05vIhZwxYgKrSAHX9eKfYt1T/view?usp=drive_link";
+const resumeURL ="https://drive.google.com/file/d/1tC0tfRO4Xa42cz8ZJGA8rPw3idW7sAa7/view?usp=drive_link";
 
 const HomeBottomPage = () => {
 

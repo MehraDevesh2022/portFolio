@@ -30,7 +30,7 @@ function Experience() {
       startYear: "Sep 2022 ",
       endYear: " Apr 2023",
       links:
-        "https://drive.google.com/file/d/1WExV0iHcNiVC8No0Y6f5PMmRDJ-lrtTc/view?usp=drive_link",
+        "https://drive.google.com/file/d/1WExV0iHcNiVC8No0Y6f5PMmRDJ-lrtTc/view?usp=drive_lin",
     },
     {
       id: 3,
